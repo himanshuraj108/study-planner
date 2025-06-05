@@ -561,7 +561,7 @@ const AdvancedStudyTodoApp = () => {
             
             <div className="flex items-center space-x-4">
               {/* Add the Android download button */}
-              {!isMobileDevice() && (
+              {isMobileDevice() && (
                 <>
                   <button
                     onClick={() => setShowDownloadInstructions(true)}
